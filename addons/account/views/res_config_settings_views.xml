@@ -66,9 +66,6 @@
                                 documentation="/applications/finance/accounting/taxation/taxes/avatax.html">
                                 <field name="module_account_avatax" widget="upgrade_boolean"/>
                             </setting>
-                            <setting id="eu_service" title="If you sell goods and services to customers in a foreign EU country, you must charge VAT based on the delivery address. This rule applies regardless of where you are located." documentation="/applications/finance/accounting/taxation/taxes/eu_distance_selling.html" help="Apply VAT of the EU country to which goods and services are delivered.">
-                                <field name="module_l10n_eu_oss"/>
-                            </setting>
                             <setting id="tax_exigibility" company_dependent="1" help="Allow to configure taxes using cash basis" title="Select this if the taxes should use cash basis, which will create an entry for such taxes on a given account during reconciliation." groups="account.group_account_user"
                                 documentation="/applications/finance/accounting/taxation/taxes/cash_basis_taxes.html">
                                 <field name="tax_exigibility"/>
