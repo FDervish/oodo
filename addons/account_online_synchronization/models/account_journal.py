@@ -74,7 +74,7 @@ class AccountJournal(models.Model):
         """
 
         cron_limit_time = tools.config['limit_time_real_cron']  # time after which cron process is killed, default = -1
-        limit_time = (cron_limit_time if cron_limit_time > 0 else tools.config['limit_time_real'])
+        limit_time = (cron_limit_time if cron_limit_time and cron_limit_time > 0 else tools.config['limit_time_real']) or 0
         journals = self.search([(
             'account_online_account_id', '!=', False),
             '|',
